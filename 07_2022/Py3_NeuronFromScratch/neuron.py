@@ -3,7 +3,7 @@ import numpy as np
 
 def sigmoid(x):
     # f(x) = 1 / (1 + e^(-x))
-    # menormalisasikan nilai tak terbatas jadi 0-1
+    # infinite value to [0, 1]
     return 1 / (1 + np.exp(-x))
 
 
@@ -21,7 +21,7 @@ class Neuron:
         return sigmoid(total)
 
 
-# Konsep dasar neuron
+# basic concept
 # f(x1, x2) = w1x1 + w2x2 + b
 if __name__ == '__main__':
     w = np.array([0, 1])  # w1 & w2
